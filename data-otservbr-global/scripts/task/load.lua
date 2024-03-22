@@ -1,0 +1,1 @@
+dofile(DATA_DIRECTORY.. '/scripts/task/task_lib.lua')
