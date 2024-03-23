@@ -35,6 +35,7 @@ GameStore.OfferTypes = {
 	OFFER_TYPE_HUNTINGSLOT = 25,
 	OFFER_TYPE_ITEM_BED = 26,
 	OFFER_TYPE_ITEM_UNIQUE = 27,
+	OFFER_TYPE_PREYBONUSTOURNAMENT = 28,
 }
 
 GameStore.SubActions = {
@@ -54,6 +55,7 @@ GameStore.SubActions = {
 	CHARM_EXPANSION = 13,
 	TASKHUNTING_THIRDSLOT = 14,
 	PREY_THIRDSLOT_REDIRECT = 15,
+	PREY_WILDCARDTOURNAMENT = 16,
 }
 
 GameStore.ActionType = {
@@ -201,6 +203,9 @@ GameStore.DefaultDescriptions = {
 		"It's hunting season! Activate a prey to gain a bonus when hunting a certain monster. Every character can purchase one Permanent Prey Slot, which enables the activation of an additional prey. \nIf you activate a prey, you can select one monster out of nine. The bonus for your prey will be selected randomly from one of the following: damage boost, damage reduction, bonus XP, improved loot. The bonus value may range from 5% to 50%. Your prey will be active for 2 hours hunting time: the duration of an active prey will only be reduced while you are hunting.",
 	},
 	PREYBONUS = {
+		"You activated a prey but do not like the randomly selected bonus? Roll for a new one! Here you can purchase five Prey Bonus Rerolls! \nA Bonus Reroll allows you to get a bonus with a higher value (max. 50%). The bonus for your prey will be selected randomly from one of the following: damage boost, damage reduction, bonus XP, improved loot. The 2 hours hunting time will start anew once you have rolled for a new bonus. Your prey monster will stay the same.",
+	},
+	PREYBONUSTOURNAMENT = {
 		"You activated a prey but do not like the randomly selected bonus? Roll for a new one! Here you can purchase five Prey Bonus Rerolls! \nA Bonus Reroll allows you to get a bonus with a higher value (max. 50%). The bonus for your prey will be selected randomly from one of the following: damage boost, damage reduction, bonus XP, improved loot. The 2 hours hunting time will start anew once you have rolled for a new bonus. Your prey monster will stay the same.",
 	},
 	TEMPLE = { "Need a quick way home? Buy this transportation service to get instantly teleported to your home temple. \n\nNote, you cannot use this service while having a battle sign or a protection zone block. Further, the service will not work in no-logout zones or close to your home temple." },
@@ -418,6 +423,7 @@ function parseBuyStoreOffer(playerId, msg)
 			offer.type ~= GameStore.OfferTypes.OFFER_TYPE_NAMECHANGE
 			and offer.type ~= GameStore.OfferTypes.OFFER_TYPE_EXPBOOST
 			and offer.type ~= GameStore.OfferTypes.OFFER_TYPE_PREYBONUS
+			and offer.type ~= GameStore.OfferTypes.OFFER_TYPE_PREYBONUSTOURNAMENT
 			and offer.type ~= GameStore.OfferTypes.OFFER_TYPE_PREYSLOT
 			and offer.type ~= GameStore.OfferTypes.OFFER_TYPE_HUNTINGSLOT
 			and offer.type ~= GameStore.OfferTypes.OFFER_TYPE_TEMPLE
@@ -484,6 +490,8 @@ function parseBuyStoreOffer(playerId, msg)
 			GameStore.processTaskHuntingThirdSlot(player)
 		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_PREYSLOT then
 			GameStore.processPreyThirdSlot(player)
+		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_PREYBONUSTOURNAMENT then
+			GameStore.processPreyBonusRerollTOURNAMENT(player, offer.count)	
 		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_PREYBONUS then
 			GameStore.processPreyBonusReroll(player, offer.count)
 		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_TEMPLE then
@@ -636,6 +644,7 @@ function Player.canBuyOffer(self, offer)
 		and offer.type ~= GameStore.OfferTypes.OFFER_TYPE_PREYSLOT
 		and offer.type ~= GameStore.OfferTypes.OFFER_TYPE_HUNTINGSLOT
 		and offer.type ~= GameStore.OfferTypes.OFFER_TYPE_PREYBONUS
+		and offer.type ~= GameStore.OfferTypes.OFFER_TYPE_PREYBONUSTOURNAMENT
 		and offer.type ~= GameStore.OfferTypes.OFFER_TYPE_TEMPLE
 		and offer.type ~= GameStore.OfferTypes.OFFER_TYPE_SEXCHANGE
 		and offer.type ~= GameStore.OfferTypes.OFFER_TYPE_HIRELING_SKILL
@@ -709,6 +718,11 @@ function Player.canBuyOffer(self, offer)
 			end
 		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_PREYBONUS then
 			if self:getPreyCards() >= GameStore.ItemLimit.PREY_WILDCARD then
+				disabled = 1
+				disabledReason = "You already have maximum of prey wildcards."
+			end
+		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_PREYBONUSTOURNAMENT then
+			if self:getPreyCards() >= 50 then
 				disabled = 1
 				disabledReason = "You already have maximum of prey wildcards."
 			end
@@ -1397,6 +1411,8 @@ GameStore.getDefaultDescription = function(offerType, count)
 		descList = GameStore.DefaultDescriptions.PREYSLOT
 	elseif offerType == t.OFFER_TYPE_PREYBONUS then
 		descList = GameStore.DefaultDescriptions.PREYBONUS
+	elseif offerType == t.OFFER_TYPE_PREYBONUS then
+		descList = GameStore.DefaultDescriptions.PREYBONUSTOURNAMENT
 	elseif offerType == t.OFFER_TYPE_TEMPLE then
 		descList = GameStore.DefaultDescriptions.TEMPLE
 	end
@@ -1774,6 +1790,13 @@ function GameStore.processPreyBonusReroll(player, offerCount)
 	local limit = GameStore.ItemLimit.PREY_WILDCARD
 	if player:getPreyCards() + offerCount >= limit + 1 then
 		return error({ code = 1, message = "You cannot own more than " .. limit .. " prey wildcards." })
+	end
+	player:addPreyCards(offerCount)
+end
+
+function GameStore.processPreyBonusRerollTOURNAMENT(player, offerCount)
+	if player:getPreyCards() + offerCount >= 51 then
+		return error({ code = 1, message = "You cannot own more than 50 prey wildcards." })
 	end
 	player:addPreyCards(offerCount)
 end
