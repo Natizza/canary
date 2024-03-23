@@ -29,8 +29,8 @@ GrandMasterOberonResponses = {
 
 GrandMasterOberonConfig = {
 	Storage = {
-		Asking = 1,
-		Life = 2,
+		Asking = 0,
+		Life = 3,
 		Exhaust = 3,
 	},
 	Monster = {
@@ -47,7 +47,6 @@ local function healOberon(monster)
 end
 
 function SendOberonAsking(monster)
-	monster:registerEvent("OberonImmunity")
 	local random = math.random(#GrandMasterOberonAsking)
 	monster:say(GrandMasterOberonAsking[random].msg, TALKTYPE_MONSTER_SAY)
 	monster:setStorageValue(GrandMasterOberonConfig.Storage.Asking, random)

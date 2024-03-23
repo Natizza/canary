@@ -155,7 +155,7 @@ mType.onSay = function(monster, creature, type, message)
 		if oberonMessagesTable then
 			if message == oberonMessagesTable.msg:lower() or message == oberonMessagesTable.msg2:lower() then
 				monster:say("GRRRAAANNGH!", TALKTYPE_MONSTER_SAY)
-				monster:unregisterEvent("OberonImmunity")
+	--			monster:unregisterEvent("OberonImmunity")
 			else
 				monster:say("HAHAHAHA!", TALKTYPE_MONSTER_SAY)
 			end
