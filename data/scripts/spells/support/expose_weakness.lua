@@ -10,7 +10,7 @@ function onTargetCreature(creature, target)
 
 	local condition = Condition(CONDITION_ATTRIBUTES)
 	condition:setParameter(CONDITION_PARAM_TICKS, 16000)
-	condition:setParameter(CONDITION_PARAM_BUFF_DAMAGERECEIVED, 105)
+	condition:setParameter(CONDITION_PARAM_BUFF_DAMAGERECEIVED, 110)
 
 	local grade = 0
 	if creature and creature:getPlayer() then

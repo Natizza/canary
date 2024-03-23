@@ -4,8 +4,8 @@ combatGrenade:setArea(createCombatArea(AREA_CIRCLE2X2))
 combatGrenade:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_HOLYDAMAGE)
 
 function onGetFormulaValues(player, level, maglevel)
-	local min = (level / 5) + (maglevel * 4)
-	local max = (level / 5) + (maglevel * 6)
+	local min = (level / 5) + (maglevel * 6)
+	local max = (level / 5) + (maglevel * 9)
 
 	local grade = player:upgradeSpellsWOD("Divine Grenade")
 
@@ -75,7 +75,7 @@ function spell.onCastSpell(creature, var)
 		return false
 	end
 
-	local cooldownByGrade = { 26, 20, 14 }
+	local cooldownByGrade = { 18, 13, 7 }
 	local cooldown = cooldownByGrade[grade]
 
 	var.instantName = "Divine Grenade Cast"

@@ -6,7 +6,7 @@ combat:setParameter(COMBAT_PARAM_BLOCKARMOR, 1)
 function onGetFormulaValues(player, skill, attack, factor)
 	local skillTotal = skill * attack
 	local levelTotal = player:getLevel() / 5
-	return -(((skillTotal * 0.17) + 17) + levelTotal) * 1.28, -(((skillTotal * 0.20) + 40) + levelTotal) * 1.28
+	return -(((skillTotal * 0.10) + 17) + levelTotal) * 1.10, -(((skillTotal * 0.20) + 38) + levelTotal) * 1
 end
 
 combat:setCallback(CALLBACK_PARAM_SKILLVALUE, "onGetFormulaValues")
@@ -68,7 +68,7 @@ spell:group("attack")
 spell:id(261)
 spell:name("Executioner's Throw")
 spell:words("exori amp kor")
-spell:level(300)
+spell:level(1)
 spell:mana(225)
 spell:isPremium(true)
 spell:range(5)

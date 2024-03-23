@@ -1,7 +1,38 @@
 local function formulaFunction(player, level, maglevel)
-	local min = (level / 5) + (maglevel * 4.5)
-	local max = (level / 5) + (maglevel * 9)
-	return -min, -max
+    local damageModifier = 1.0
+    local sanguineBootsID = {43884}
+    local powerfulWeaponsIDs = {43883}
+    local strongWeaponsIDs = {43882}
+
+    for slot = CONST_SLOT_LEGS, CONST_SLOT_FEET do
+        local sanguineItem = player:getSlotItem(slot)
+
+        if sanguineItem and table.contains(sanguineBootsID, sanguineItem:getId()) then
+        	Spdlog.info("Sanguine Boots")
+            damageModifier = damageModifier * 1.08
+        end
+    end
+
+    for slot = CONST_SLOT_RIGHT, CONST_SLOT_LEFT do
+        local equippedWeapon = player:getSlotItem(slot)
+
+        if equippedWeapon then
+            if table.contains(powerfulWeaponsIDs, equippedWeapon:getId()) then
+            	Spdlog.info("Grand Sanguine Coil")
+                damageModifier = damageModifier * 1.1
+            elseif table.contains(strongWeaponsIDs, equippedWeapon:getId()) then
+            	Spdlog.info("Sanguine Coil")
+                damageModifier = damageModifier * 1.05
+            end
+        end
+    end
+    
+	local min = (level / 5) + (maglevel * 5) +140
+	local max = (level / 5) + (maglevel * 8.2) +140
+
+    local finalMinDamage = -min * damageModifier
+    local finalMaxDamage = -max * damageModifier
+    return finalMinDamage, finalMaxDamage
 end
 
 function onGetFormulaValues(player, level, maglevel)
@@ -28,12 +59,10 @@ local combatWOD = createCombat(AREA_WAVE7, AREADIAGONAL_WAVE7, "onGetFormulaValu
 local spell = Spell("instant")
 
 function spell.onCastSpell(creature, var)
-	local player = creature:getPlayer()
-	if creature and player then
+	local player = creature:getPlayer()		
 		if player:getWheelSpellAdditionalArea("Energy Wave") then
 			return combatWOD:execute(creature, var)
 		end
-	end
 	return combat:execute(creature, var)
 end
 
@@ -45,7 +74,7 @@ spell:castSound(SOUND_EFFECT_TYPE_SPELL_ENERGY_WAVE)
 spell:level(38)
 spell:mana(170)
 spell:needDirection(true)
-spell:cooldown(8 * 1000)
+spell:cooldown(5 * 1000)
 spell:groupCooldown(2 * 1000)
 spell:needLearn(false)
 spell:vocation("sorcerer;true", "master sorcerer;true")

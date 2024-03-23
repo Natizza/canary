@@ -8,6 +8,10 @@ function spell.onCastSpell(creature, variant)
 		return false
 	end
 
+	local sanguineLegs = {
+        43876
+    }
+
 	local grade = creature:revelationStageWOD("Avatar of Steel")
 	if grade == 0 then
 		creature:sendCancelMessage("You cannot cast this spell")
@@ -23,6 +27,16 @@ function spell.onCastSpell(creature, variant)
 	elseif grade >= 1 then
 		cooldown = 120
 	end
+    
+    for slot = CONST_SLOT_LEGS, CONST_SLOT_FEET do
+        local sanguineItem = creature:getSlotItem(slot)
+
+        if sanguineItem and table.contains(sanguineLegs, sanguineItem:getId()) then
+        	Spdlog.info("Sanguine Legs")
+            cooldown = cooldown - 15
+        end
+    end
+
 	local duration = 15000
 	condition:setTicks(duration)
 	local conditionCooldown = Condition(CONDITION_SPELLCOOLDOWN, CONDITIONID_DEFAULT, 264)
@@ -42,11 +56,11 @@ spell:name("Avatar of Steel")
 spell:words("uteta res eq")
 spell:level(300)
 spell:mana(800)
-spell:isPremium(true)
+spell:isPremium(false)
 spell:cooldown(1000) -- Cooldown is calculated on the casting
 spell:groupCooldown(2 * 1000)
 spell:vocation("knight;true", "elite knight;true")
 spell:hasParams(true)
 spell:isAggressive(false)
-spell:needLearn(true)
+spell:needLearn(false)
 spell:register()
