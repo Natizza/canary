@@ -1,14 +1,14 @@
 local config = {
 	-- Position of the first position (line 1 column 1)
-	firstRoomPosition = { x = 1018, y = 1112, z = 7 },
+	firstRoomPosition = { x = 920, y = 1109, z = 6 },
 	-- X distance between each room (on the same line)
 	distancePositionX = 12,
 	-- Y distance between each room (on the same line)
-	distancePositionY = 12,
+	distancePositionY = 11,
 	-- Number of columns
 	columns = 7,
 	-- Number of lines
-	lines = 54,
+	lines = 59,
 }
 
 local function isBusyable(position)
@@ -72,5 +72,5 @@ function trainerEntrance.onStepIn(creature, item, position, fromPosition)
 	return true
 end
 
-trainerEntrance:position({ x = 1116, y = 1092, z = 7 })
+trainerEntrance:position({ x = 32365, y = 32236, z = 7 })
 trainerEntrance:register()
