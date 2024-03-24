@@ -90,6 +90,8 @@ local firstStageConfig = {
 		38130,
 		38126,
 		38136,
+		39613,
+		39612,
 	},
 	isWaterSparkling = false,
 	skipedSparklingIterations = 0,
