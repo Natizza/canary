@@ -1,5 +1,5 @@
 local config = {
-	enabled = false,
+	enabled = true,
 	storage = Storage.VipSystem.OnlineCoinsGain,
 	checkDuplicateIps = false,
 
@@ -8,12 +8,12 @@ local config = {
 	-- per hour | system will calculate how many coins will be given and when
 	-- put 0 in coinsPerHour.free to disable free from receiving coins
 	coinsPerHour = {
-		free = 1,
-		vip = 5,
+		free = 30,
+		vip = 60,
 	},
 
 	-- system will distribute when the player accumulate x coins
-	awardOn = 5,
+	awardOn = 60,
 }
 
 local onlineCoinsEvent = GlobalEvent("GainCoinInterval")
