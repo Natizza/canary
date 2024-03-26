@@ -85,7 +85,7 @@ magicLevelStages = {
 		{
 		minlevel = 0,
 		maxlevel = 50,
-		multiplier = 5,--7
+		multiplier = 35,--7
 	},
 	{
 		minlevel = 51,
