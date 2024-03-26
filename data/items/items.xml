@@ -75950,5 +75950,19 @@ Granted by TibiaGoals.com"/>
 			<attribute key="rate" value="120"/>
 		</attribute>
 	</item>
+		<item id="44799" article="a" name="spiritthorn backpack">
+		<attribute key="primarytype" value="containers"/>
+		<attribute key="containersize" value="32"/>
+		<attribute key="showAttributes" value="1"/>
+		<attribute key="reflectdamage" value="5"/>
+		<attribute key="weight" value="15"/>
+		<attribute key="description" value="This backpack can only be use by knight."/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="increase capacity" value="3"/>
+		</attribute>
+		<attribute key="script" value="moveevent">
+		<attribute key="slot" value="backpack"/>
+		</attribute>
+	</item>
 </items>
 
