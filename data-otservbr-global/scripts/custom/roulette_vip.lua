@@ -1,22 +1,25 @@
 local config = {
-    actionId = 18563, -- on lever
+    uniqueId = 30000, -- on lever
+
     lever = {
         left = 2772,
         right = 2773
     },
+
     playItem = {
-        itemId = 37317, -- item required to pull lever
+        itemId = 37317,
         count = 1
     },
+
     rouletteOptions = {
-        rareItemChance_broadcastThreshold = 500,
-        ignoredItems = {1617, 5420}, -- if you have tables/counters/other items on the roulette tiles, add them here
+        ignoredItems = {}, -- if you have tables/counters/other items on the roulette tiles, add them here
         winEffects = {CONST_ANI_FIRE, CONST_ME_SOUND_YELLOW, CONST_ME_SOUND_PURPLE, CONST_ME_SOUND_BLUE, CONST_ME_SOUND_WHITE}, -- first effect needs to be distance effect
         effectDelay = 333,
-        spinTime = {min = 5, max = 12}, -- seconds
+        spinTime = {min = 8, max = 12}, -- seconds
         spinSlowdownRamping = 5,
-        rouletteStorage = 48550 -- required storage to avoid player abuse (if they logout/die before roulette finishes.. they can spin again for free)
+        rouletteStorage = "roulette-finishes" -- required storage to avoid player abuse (if they logout/die before roulette finishes.. they can spin again for free)
     },
+
     prizePool = {
         {itemId = 37317, count = {1, 1},   chance = 51}, -- roulete coin
         {itemId = 44797, count = {1, 1},   chance = 50}, -- ED BP 
@@ -69,20 +72,20 @@ local config = {
         {itemId = 39546, count = {1, 1},   chance = 3}, -- primal bag
         {itemId = 43895, count = {1, 1},   chance = 2}, -- sanguine bag
         {itemId = 5903, count = {1, 1},   chance = 1}, -- ferumbras hat
-
     },
-    roulettePositions = { -- hard-coded to 7 positions.
+
+    roulettePositions = {
         Position(845, 1058, 5),
         Position(846, 1058, 5),
         Position(847, 1058, 5),
-        Position(848, 1058, 5), -- position 4 in this list is hard-coded to be the reward location, which is the item given to the player
+        Position(848, 1058, 5), -- position 11 in this list is hard-coded to be the reward location, which is the item given to the player
         Position(849, 1058, 5),
         Position(850, 1058, 5),
-        Position(851, 1058, 5),
+        Position(851, 1058, 5)
     }
 }
 
-local chancedItems = {} -- used for broadcast. don't edit
+local chancedItems = {}
 
 local function resetLever(position)
     local lever = Tile(position):getItemById(config.lever.right)
@@ -94,16 +97,17 @@ local function updateRoulette(newItemInfo)
     for i = #positions, 1, -1 do
         local item = Tile(positions[i]):getTopVisibleThing()
         if item and item:getId() ~= Tile(positions[i]):getGround():getId() and not table.contains(config.rouletteOptions.ignoredItems, item:getId()) then
-            if i ~= 7 then
+            if i ~= 11 then
                 item:moveTo(positions[i + 1])
             else
                 item:remove()
             end
         end
     end
+
     if ItemType(newItemInfo.itemId):getCharges() then
         local item = Game.createItem(newItemInfo.itemId, 1, positions[1])
-        item:setAttribute("charges", newItemInfo.count)
+        item:setAttribute(ITEM_ATTRIBUTE_CHARGES, newItemInfo.count)
     else
         Game.createItem(newItemInfo.itemId, newItemInfo.count, positions[1])
     end
@@ -116,12 +120,13 @@ local function clearRoulette(newItemInfo)
         if item and item:getId() ~= Tile(positions[i]):getGround():getId() and not table.contains(config.rouletteOptions.ignoredItems, item:getId()) then
             item:remove()
         end
+
         if newItemInfo == nil then
             positions[i]:sendMagicEffect(CONST_ME_POFF)
         else
             if ItemType(newItemInfo.itemId):getCharges() then
                 local item = Game.createItem(newItemInfo.itemId, 1, positions[i])
-                item:setAttribute("charges", newItemInfo.count)
+                item:setAttribute(ITEM_ATTRIBUTE_CHARGES, newItemInfo.count)
             else
                 Game.createItem(newItemInfo.itemId, newItemInfo.count, positions[i])
             end
@@ -131,7 +136,6 @@ end
 
 local function chanceNewReward()
     local newItemInfo = {itemId = 0, count = 0}
-    
     local rewardTable = {}
     while #rewardTable < 1 do
         for i = 1, #config.prizePool do
@@ -140,12 +144,11 @@ local function chanceNewReward()
             end
         end
     end
-    
+
     local rand = math.random(#rewardTable)
     newItemInfo.itemId = config.prizePool[rewardTable[rand]].itemId
     newItemInfo.count = math.random(config.prizePool[rewardTable[rand]].count[1], config.prizePool[rewardTable[rand]].count[2])
     chancedItems[#chancedItems + 1] = config.prizePool[rewardTable[rand]].chance
-    
     return newItemInfo
 end
 
@@ -153,21 +156,24 @@ local function initiateReward(leverPosition, effectCounter)
     if effectCounter < #config.rouletteOptions.winEffects then
         effectCounter = effectCounter + 1
         if effectCounter == 1 then
-            config.roulettePositions[1]:sendDistanceEffect(config.roulettePositions[4], config.rouletteOptions.winEffects[1])
-            config.roulettePositions[7]:sendDistanceEffect(config.roulettePositions[4], config.rouletteOptions.winEffects[1])
+            config.roulettePositions[11]:sendDistanceEffect(config.roulettePositions[6], config.rouletteOptions.winEffects[1])
+            config.roulettePositions[11]:sendDistanceEffect(config.roulettePositions[6], config.rouletteOptions.winEffects[1])
         else
             for i = 1, #config.roulettePositions do
                 config.roulettePositions[i]:sendMagicEffect(config.rouletteOptions.winEffects[effectCounter])
             end
         end
+
         if effectCounter == 2 then
-            local item = Tile(config.roulettePositions[4]):getTopVisibleThing()
+            local item = Tile(config.roulettePositions[6]):getTopVisibleThing()
             local newItemInfo = {itemId = item:getId(), count = item:getCount()}
             clearRoulette(newItemInfo)
         end
+
         addEvent(initiateReward, config.rouletteOptions.effectDelay, leverPosition, effectCounter)
         return
     end
+
     resetLever(leverPosition)
 end
 
@@ -176,20 +182,20 @@ local function rewardPlayer(playerId, leverPosition)
     if not player then
         return
     end
-    
-    local item = Tile(config.roulettePositions[4]):getTopVisibleThing()
-    
-    if ItemType(item:getId()):getCharges() then
-        local addedItem = player:addItem(item:getId(), 1, true)
-        addedItem:setAttribute("charges", item:getCharges())
-    else
-        player:addItem(item:getId(), item:getCount(), true)
+
+    local item = Tile(config.roulettePositions[6]):getTopVisibleThing()
+    local inbox = player:getInbox()
+    if inbox then
+        local addedItem = inbox:addItem(item:getId(), 1, INDEX_WHEREEVER, FLAG_NOLIMIT)
+        if addedItem and ItemType(item:getId()):getCharges() then
+            addedItem:setAttribute(ITEM_ATTRIBUTE_CHARGES, item:getCharges())
+        end
     end
 
-    player:setStorageValue(config.rouletteOptions.rouletteStorage, -1)
-    if chancedItems[#chancedItems - 3] <= config.rouletteOptions.rareItemChance_broadcastThreshold then
-        Game.broadcastMessage("The player " .. player:getName() .. " has won " .. item:getName() .. " from the roulette!", MESSAGE_EVENT_ADVANCE)
-    end
+    player:sendTextMessage(MESSAGE_STATUS, "Congratulations! You have won " .. item:getName() .. ". The item has been sent to your inbox.")
+    player:kv():set(config.rouletteOptions.rouletteStorage, -1)
+    player:setMoveLocked(false)
+    Game.broadcastMessage(string.format("{%d|%s} The player %s has won {%d|%s} from the roulette!", MESSAGE_COLOR_YELLOW, "[ROULETTE WINNER]", player:getName(), MESSAGE_COLOR_BLUE, item:getName()), MESSAGE_LOOT)
 end
 
 local function roulette(playerId, leverPosition, spinTimeRemaining, spinDelay)
@@ -198,16 +204,16 @@ local function roulette(playerId, leverPosition, spinTimeRemaining, spinDelay)
         resetLever(leverPosition)
         return
     end
-    
+
     local newItemInfo = chanceNewReward()
     updateRoulette(newItemInfo)
-    
+
     if spinTimeRemaining > 0 then
         spinDelay = spinDelay + config.rouletteOptions.spinSlowdownRamping
         addEvent(roulette, spinDelay, playerId, leverPosition, spinTimeRemaining - (spinDelay - config.rouletteOptions.spinSlowdownRamping), spinDelay)
         return
     end
-    
+
     initiateReward(leverPosition, 0)
     rewardPlayer(playerId, leverPosition)
 end
@@ -216,37 +222,36 @@ local casinoRoulette = Action()
 
 function casinoRoulette.onUse(player, item, fromPosition, target, toPosition, isHotkey)
     if item:getId() == config.lever.right then
-        player:sendTextMessage(MESSAGE_GAME_HIGHLIGHT, "Casino Roulette is currently in progress. Please wait.")
+        player:sendTextMessage(MESSAGE_FAILURE, "Casino Roulette is currently in progress. Please wait.")
         return true
     end
-    
+
     if player:getItemCount(config.playItem.itemId) < config.playItem.count then
-        if player:getStorageValue(config.rouletteOptions.rouletteStorage) < 1 then
-            player:sendTextMessage(MESSAGE_GAME_HIGHLIGHT, "Casino Roulette requires " .. config.playItem.count .. " " .. (ItemType(config.playItem.itemId):getName()) .. " to use.")
+        if player:kv():get(config.rouletteOptions.rouletteStorage) < 1 then
+            player:sendTextMessage(MESSAGE_FAILURE, "Casino Roulette requires " .. config.playItem.count .. " " .. (ItemType(config.playItem.itemId):getName()) .. " to use.")
             return true
         end
-        -- player:sendTextMessage(MESSAGE_GAME_HIGHLIGHT, "Free Spin being used due to a previous unforeseen error.")
     end
-    
+
     item:transform(config.lever.right)
     clearRoulette()
     chancedItems = {}
-    
+
     player:removeItem(config.playItem.itemId, config.playItem.count)
-    player:setStorageValue(config.rouletteOptions.rouletteStorage, 1)
-    
+    player:kv():set(config.rouletteOptions.rouletteStorage, 1)
+    player:setMoveLocked(true)
+
     local spinTimeRemaining = math.random((config.rouletteOptions.spinTime.min * 1000), (config.rouletteOptions.spinTime.max * 1000))
     roulette(player:getId(), toPosition, spinTimeRemaining, 100)
     return true
 end
 
-casinoRoulette:aid(config.actionId)
+casinoRoulette:uid(config.uniqueId)
 casinoRoulette:register()
 
+local disableMovingItemsToRoulettePositions = EventCallback()
 
-local disableMovingItemsToRoulettePositions = MoveEvent()
-
-disableMovingItemsToRoulettePositions.onAddItem = function(moveitem, tileitem, position, item, count, fromPosition, toPosition)
+disableMovingItemsToRoulettePositions.playerOnMoveItem = function(self, item, count, fromPosition, toPosition, fromCylinder, toCylinder)
     for v, k in pairs(config.roulettePositions) do
         if toPosition == k then
             return false
@@ -255,5 +260,17 @@ disableMovingItemsToRoulettePositions.onAddItem = function(moveitem, tileitem, p
     return true
 end
 
-disableMovingItemsToRoulettePositions:position(config.roulettePositions)
 disableMovingItemsToRoulettePositions:register()
+
+local rouletteLogout = CreatureEvent("Roulette Logout")
+
+function rouletteLogout.onLogout(player)
+    if player:kv():get(config.rouletteOptions.rouletteStorage) == 1 then
+        player:sendTextMessage(MESSAGE_FAILURE, "You cannot disconnect while using roulette!")
+        player:getPosition():sendMagicEffect(CONST_ME_POFF)
+        return false
+    end
+    return true
+end
+
+rouletteLogout:register()
