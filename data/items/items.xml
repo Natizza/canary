@@ -70213,10 +70213,10 @@ Granted by TibiaGoals.com"/>
 		<attribute key="description" value="It was awarded during the festivities of Tibia's anniversary"/>
 		<attribute key="weight" value="800"/>
 	</item>
-	<item id="37536" article="a" name="changing backpack">
+	<item id="37536" article="a" name="nataera backpack">
 		<attribute key="primarytype" value="containers"/>
 		<attribute key="description" value="It changes its appearance in the course of years, just like Tibia"/>
-		<attribute key="containersize" value="20"/>
+		<attribute key="containersize" value="100"/>
 		<attribute key="weight" value="1500"/>
 		<attribute key="imbuementslot" value="1">
 			<attribute key="increase capacity" value="3"/>
