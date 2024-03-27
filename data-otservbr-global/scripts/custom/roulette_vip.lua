@@ -199,7 +199,7 @@ local function rewardPlayer(playerId, leverPosition)
     player:sendTextMessage(MESSAGE_STATUS, "Congratulations! You have won " .. item:getName() .. ". The item has been sent to your inbox.")
     player:kv():set(config.rouletteOptions.rouletteStorage, -1)
     player:setMoveLocked(false)
-    Game.broadcastMessage(string.format("{%d|%s} The player %s has won {%d|%s} from the roulette!", MESSAGE_COLOR_YELLOW, "[ROULETTE WINNER]", player:getName(), MESSAGE_COLOR_BLUE, item:getName()), MESSAGE_LOOT)
+    Game.broadcastMessage("The player " .. player:getName() .. " has won " .. item:getName() .. " from the roulette!", MESSAGE_EVENT_ADVANCE)
 end
 
 local function roulette(playerId, leverPosition, spinTimeRemaining, spinDelay)
