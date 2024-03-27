@@ -75,13 +75,17 @@ local config = {
     },
 
     roulettePositions = {
+        Position(843, 1058, 5),
+        Position(844, 1058, 5),
         Position(845, 1058, 5),
         Position(846, 1058, 5),
         Position(847, 1058, 5),
         Position(848, 1058, 5), -- position 11 in this list is hard-coded to be the reward location, which is the item given to the player
         Position(849, 1058, 5),
         Position(850, 1058, 5),
-        Position(851, 1058, 5)
+        Position(851, 1058, 5),
+        Position(852, 1058, 5),
+        Position(853, 1058, 5)
     }
 }
 
