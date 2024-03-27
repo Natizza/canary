@@ -123,6 +123,9 @@
 	<npc centerx="33099" centery="32522" centerz="3" radius="1">
 		<npc name="Djema" x="0" y="0" z="3" spawntime="60" />
 	</npc>
+	<npc centerx="33803" centery="32755" centerz="3" radius="1">
+		<npc name="Trusted Merchant" x="0" y="0" z="3" spawntime="60" />
+	</npc>
 	<npc centerx="32396" centery="32821" centerz="3" radius="1">
 		<npc name="Admiral Wyrmslicer" x="0" y="0" z="3" spawntime="60" />
 	</npc>
@@ -356,6 +359,9 @@
 	</npc>
 	<npc centerx="32096" centery="32219" centerz="5" radius="1">
 		<npc name="Asralius" x="0" y="0" z="5" spawntime="60" />
+	</npc>
+	<npc centerx="32353" centery="32219" centerz="5" radius="1">
+		<npc name="Tokentor" x="0" y="0" z="5" spawntime="60" />
 	</npc>
 	<npc centerx="33618" centery="32372" centerz="5" radius="1">
 		<npc name="Eruaran" x="0" y="0" z="5" spawntime="60" />
@@ -768,6 +774,9 @@
 	<npc centerx="32363" centery="32210" centerz="6" radius="1">
 		<npc name="Todd" x="0" y="0" z="6" spawntime="60" />
 	</npc>
+	<npc centerx="32353" centery="32219" centerz="6" radius="1">
+		<npc name="Addoner" x="0" y="0" z="6" spawntime="60" />
+	</npc>
 	<npc centerx="32425" centery="32223" centerz="6" radius="1">
 		<npc name="Tim, The Guard" x="0" y="0" z="6" spawntime="60" />
 	</npc>
@@ -816,6 +825,9 @@
 	<npc centerx="33716" centery="32376" centerz="6" radius="1">
 		<npc name="Dream Butterfly" x="0" y="0" z="6" spawntime="60" />
 	</npc>
+	<npc centerx="33558" centery="32377" centerz="6" radius="1">
+		<npc name="Trusted Merchant" x="0" y="0" z="6" spawntime="60" />
+	</npc>
 	<npc centerx="33231" centery="32389" centerz="6" radius="1">
 		<npc name="Kazzan" x="0" y="0" z="6" spawntime="60" />
 	</npc>
@@ -840,6 +852,9 @@
 	<npc centerx="32826" centery="32574" centerz="6" radius="1">
 		<npc name="Hairycles" x="0" y="0" z="6" spawntime="60" />
 	</npc>
+	<npc centerx="33710" centery="32602" centerz="6" radius="1">
+		<npc name="Hawkhurst Ingol" x="0" y="0" z="6" spawntime="60" />
+	</npc>
 	<npc centerx="33047" centery="32622" centerz="6" radius="1">
 		<npc name="Ubaid" x="0" y="0" z="6" spawntime="60" />
 	</npc>
@@ -851,6 +866,9 @@
 	</npc>
 	<npc centerx="32634" centery="32739" centerz="6" radius="1">
 		<npc name="Ferks" x="0" y="0" z="6" spawntime="60" />
+	</npc>
+	<npc centerx="32628" centery="32743" centerz="6" radius="1">
+		<npc name="Trusted Merchant" x="0" y="0" z="6" spawntime="60" />
 	</npc>
 	<npc centerx="32620" centery="32746" centerz="6" radius="1">
 		<npc name="Ray" x="0" y="0" z="6" spawntime="60" />
@@ -899,6 +917,9 @@
 	</npc>
 	<npc centerx="33773" centery="32840" centerz="6" radius="1">
 		<npc name="Isika" x="0" y="0" z="6" spawntime="60" />
+	</npc>
+	<npc centerx="33777" centery="32841" centerz="6" radius="1">
+		<npc name="Trusted Merchant" x="0" y="0" z="6" spawntime="60" />
 	</npc>
 	<npc centerx="33777" centery="32844" centerz="6" radius="1">
 		<npc name="Asphota" x="0" y="0" z="6" spawntime="60" />
@@ -1035,6 +1056,9 @@
 	<npc centerx="32895" centery="31139" centerz="7" radius="1">
 		<npc name="Yaman" x="0" y="0" z="7" spawntime="60" />
 	</npc>
+	<npc centerx="32264" centery="31141" centerz="7" radius="1">
+		<npc name="Trusted Merchant" x="0" y="0" z="7" spawntime="60" />
+	</npc>
 	<npc centerx="32219" centery="31142" centerz="7" radius="1">
 		<npc name="Eirik" x="0" y="0" z="7" spawntime="60" />
 	</npc>
@@ -1119,6 +1143,9 @@
 	<npc centerx="32807" centery="31246" centerz="7" radius="1">
 		<npc name="Menacing Mummy" x="0" y="0" z="7" spawntime="60" />
 	</npc>
+	<npc centerx="32790" centery="31247" centerz="7" radius="1">
+		<npc name="Trusted Merchant" x="0" y="0" z="7" spawntime="60" />
+	</npc>
 	<npc centerx="32812" centery="31248" centerz="7" radius="1">
 		<npc name="Lisander" x="0" y="0" z="7" spawntime="60" />
 	</npc>
@@ -1190,6 +1217,9 @@
 	</npc>
 	<npc centerx="33891" centery="31474" centerz="7" radius="1">
 		<npc name="Guide Meruka" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="33922" centery="31479" centerz="7" radius="1">
+		<npc name="Trusted Merchant" x="0" y="0" z="7" spawntime="60" />
 	</npc>
 	<npc centerx="33919" centery="31492" centerz="7" radius="1">
 		<npc name="Guard Saros" x="0" y="0" z="7" spawntime="60" />
@@ -1320,6 +1350,9 @@
 	<npc centerx="32660" centery="31685" centerz="7" radius="1">
 		<npc name="Lavirias" x="0" y="0" z="7" spawntime="60" />
 	</npc>
+	<npc centerx="32682" centery="31687" centerz="7" radius="1">
+		<npc name="Trusted Merchant" x="0" y="0" z="7" spawntime="60" />
+	</npc>
 	<npc centerx="33348" centery="31687" centerz="7" radius="1">
 		<npc name="Gladys" x="0" y="0" z="7" spawntime="60" />
 	</npc>
@@ -1406,6 +1439,9 @@
 	</npc>
 	<npc centerx="32326" centery="31780" centerz="7" radius="1">
 		<npc name="Eva" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="32334" centery="31782" centerz="7" radius="1">
+		<npc name="Trusted Merchant" x="0" y="0" z="7" spawntime="60" />
 	</npc>
 	<npc centerx="32361" centery="31782" centerz="7" radius="1">
 		<npc name="Alia" x="0" y="0" z="7" spawntime="60" />
@@ -1512,6 +1548,9 @@
 	<npc centerx="33327" centery="31882" centerz="7" radius="1">
 		<npc name="Eremo" x="0" y="0" z="7" spawntime="60" />
 	</npc>
+	<npc centerx="33635" centery="31894" centerz="7" radius="1">
+		<npc name="Trusted Merchant" x="0" y="0" z="7" spawntime="60" />
+	</npc>
 	<npc centerx="33570" centery="31926" centerz="7" radius="1">
 		<npc name="Fillias" x="0" y="0" z="7" spawntime="60" />
 	</npc>
@@ -1550,6 +1589,9 @@
 	</npc>
 	<npc centerx="33189" centery="31982" centerz="7" radius="1">
 		<npc name="Scrutinon" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="33356" centery="31984" centerz="7" radius="1">
+		<npc name="Hawkhurst" x="0" y="0" z="7" spawntime="60" />
 	</npc>
 	<npc centerx="33479" centery="31986" centerz="7" radius="1">
 		<npc name="Captain Gulliver" x="0" y="0" z="7" spawntime="60" />
@@ -1616,6 +1658,9 @@
 	</npc>
 	<npc centerx="32918" centery="32075" centerz="7" radius="1">
 		<npc name="Dove" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="32927" centery="32076" centerz="7" radius="1">
+		<npc name="Trusted Merchant" x="0" y="0" z="7" spawntime="60" />
 	</npc>
 	<npc centerx="32959" centery="32077" centerz="7" radius="1">
 		<npc name="Yberius" x="0" y="0" z="7" spawntime="60" />
@@ -1749,6 +1794,9 @@
 	<npc centerx="32066" centery="32225" centerz="7" radius="1">
 		<npc name="Lily" x="0" y="0" z="7" spawntime="60" />
 	</npc>
+	<npc centerx="32347" centery="32226" centerz="7" radius="1">
+		<npc name="Trusted Merchant" x="0" y="0" z="7" spawntime="60" />
+	</npc>
 	<npc centerx="32450" centery="32226" centerz="7" radius="1">
 		<npc name="Palomino" x="0" y="0" z="7" spawntime="60" />
 	</npc>
@@ -1778,6 +1826,9 @@
 	</npc>
 	<npc centerx="32368" centery="32240" centerz="7" radius="1">
 		<npc name="Quentin" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="32360" centery="32241" centerz="7" radius="1">
+		<npc name="Imbuement Assistant" x="0" y="0" z="7" spawntime="60" />
 	</npc>
 	<npc centerx="33450" centery="32246" centerz="7" radius="1">
 		<npc name="Gerimor" x="0" y="0" z="7" spawntime="60" />
@@ -2088,6 +2139,12 @@
 	<npc centerx="32268" centery="32841" centerz="7" radius="1">
 		<npc name="Charlotta" x="0" y="0" z="7" spawntime="60" />
 	</npc>
+	<npc centerx="32336" centery="32841" centerz="7" radius="1">
+		<npc name="Trusted Merchant" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="33126" centery="32841" centerz="7" radius="1">
+		<npc name="Trusted Merchant" x="0" y="0" z="7" spawntime="60" />
+	</npc>
 	<npc centerx="33158" centery="32849" centerz="7" radius="1">
 		<npc name="Ishebad" x="0" y="0" z="7" spawntime="60" />
 	</npc>
@@ -2160,6 +2217,9 @@
 	<npc centerx="33452" centery="31308" centerz="8" radius="1">
 		<npc name="Eighty" x="0" y="0" z="8" spawntime="60" />
 	</npc>
+	<npc centerx="33449" centery="31315" centerz="8" radius="1">
+		<npc name="Trusted Merchant" x="0" y="0" z="8" spawntime="60" />
+	</npc>
 	<npc centerx="33362" centery="31342" centerz="8" radius="1">
 		<npc name="Crowned Tree" x="0" y="0" z="8" spawntime="60" />
 	</npc>
@@ -2184,6 +2244,9 @@
 	<npc centerx="32659" centery="31657" centerz="8" radius="1">
 		<npc name="Shanar" x="0" y="0" z="8" spawntime="60" />
 	</npc>
+	<npc centerx="33657" centery="31665" centerz="8" radius="1">
+		<npc name="Trusted Merchant" x="0" y="0" z="8" spawntime="60" />
+	</npc>
 	<npc centerx="32636" centery="31667" centerz="8" radius="1">
 		<npc name="Briasol" x="0" y="0" z="8" spawntime="60" />
 	</npc>
@@ -2198,6 +2261,9 @@
 	</npc>
 	<npc centerx="32317" centery="31797" centerz="8" radius="1">
 		<npc name="Karl" x="0" y="0" z="8" spawntime="60" />
+	</npc>
+	<npc centerx="33168" centery="31800" centerz="8" radius="1">
+		<npc name="Trusted Merchant" x="0" y="0" z="8" spawntime="60" />
 	</npc>
 	<npc centerx="32317" centery="31802" centerz="8" radius="1">
 		<npc name="William" x="0" y="0" z="8" spawntime="60" />
@@ -2225,6 +2291,9 @@
 	</npc>
 	<npc centerx="33571" centery="31908" centerz="8" radius="1">
 		<npc name="Elliott" x="0" y="0" z="8" spawntime="60" />
+	</npc>
+	<npc centerx="32651" centery="31912" centerz="8" radius="1">
+		<npc name="Trusted Merchant" x="0" y="0" z="8" spawntime="60" />
 	</npc>
 	<npc centerx="32619" centery="31917" centerz="8" radius="1">
 		<npc name="Iwar" x="0" y="0" z="8" spawntime="60" />
@@ -2298,6 +2367,9 @@
 	<npc centerx="33277" centery="32390" centerz="8" radius="1">
 		<npc name="Mazarius" x="0" y="0" z="8" spawntime="60" />
 	</npc>
+	<npc centerx="33214" centery="32461" centerz="8" radius="1">
+		<npc name="Trusted Merchant" x="0" y="0" z="8" spawntime="60" />
+	</npc>
 	<npc centerx="31939" centery="32502" centerz="8" radius="1">
 		<npc name="Jamesfrancis" x="0" y="0" z="8" spawntime="60" />
 	</npc>
@@ -2330,6 +2402,18 @@
 	</npc>
 	<npc centerx="33419" centery="31125" centerz="9" radius="1">
 		<npc name="A Strange Chalice" x="0" y="0" z="9" spawntime="60" />
+	</npc>
+	<npc centerx="33361" centery="31316" centerz="9" radius="1">
+		<npc name="Oberon'S Bile" x="0" y="0" z="9" spawntime="60" />
+	</npc>
+	<npc centerx="33367" centery="31316" centerz="9" radius="1">
+		<npc name="Oberon'S Hate" x="0" y="0" z="9" spawntime="60" />
+	</npc>
+	<npc centerx="33361" centery="31320" centerz="9" radius="1">
+		<npc name="Oberon'S Spite" x="0" y="0" z="9" spawntime="60" />
+	</npc>
+	<npc centerx="33367" centery="31320" centerz="9" radius="1">
+		<npc name="Oberon'S Ire" x="0" y="0" z="9" spawntime="60" />
 	</npc>
 	<npc centerx="33444" centery="31321" centerz="9" radius="1">
 		<npc name="Rock With A Soft Spot" x="0" y="0" z="9" spawntime="60" />
@@ -2378,18 +2462,6 @@
 	</npc>
 	<npc centerx="33007" centery="31891" centerz="9" radius="1">
 		<npc name="Gnomission" x="0" y="0" z="9" spawntime="60" />
-	</npc>
-	<npc centerx="33361" centery="31316" centerz="9" radius="1">
-		<npc name="Oberon's Bile" x="0" y="0" z="9" spawntime="60" />
-	</npc>
-	<npc centerx="33367" centery="31316" centerz="9" radius="1">
-		<npc name="Oberon's Hate" x="0" y="0" z="9" spawntime="60" />
-	</npc>
-	<npc centerx="33361" centery="31320" centerz="9" radius="1">
-		<npc name="Oberon's Spite" x="0" y="0" z="9" spawntime="60" />
-	</npc>
-	<npc centerx="33367" centery="31320" centerz="9" radius="1">
-		<npc name="Oberon's Ire" x="0" y="0" z="9" spawntime="60" />
 	</npc>
 	<npc centerx="32664" centery="31894" centerz="9" radius="1">
 		<npc name="Uzgod" x="0" y="0" z="9" spawntime="60" />
@@ -2575,6 +2647,9 @@
 	<npc centerx="32657" centery="31359" centerz="11" radius="1">
 		<npc name="Pyromental" x="0" y="0" z="11" spawntime="60" />
 	</npc>
+	<npc centerx="33026" centery="31450" centerz="11" radius="1">
+		<npc name="Trusted Merchant" x="0" y="0" z="11" spawntime="60" />
+	</npc>
 	<npc centerx="32765" centery="31599" centerz="11" radius="1">
 		<npc name="Repenter" x="0" y="0" z="11" spawntime="60" />
 	</npc>
@@ -2746,6 +2821,9 @@
 	<npc centerx="32732" centery="32564" centerz="12" radius="1">
 		<npc name="Ghost Of A Priest" x="0" y="0" z="12" spawntime="60" />
 	</npc>
+	<npc centerx="33780" centery="32584" centerz="12" radius="1">
+		<npc name="Emberwing" x="0" y="0" z="12" spawntime="60" />
+	</npc>
 	<npc centerx="32303" centery="31015" centerz="13" radius="1">
 		<npc name="A Dragon Mother" x="0" y="0" z="13" spawntime="60" />
 	</npc>
@@ -2778,9 +2856,6 @@
 	</npc>
 	<npc centerx="32784" centery="32528" centerz="13" radius="1">
 		<npc name="Ghost Of A Priest" x="0" y="0" z="13" spawntime="60" />
-	</npc>
-	<npc centerx="33586" centery="32546" centerz="13" radius="1">
-		<npc name="Emberwing" x="0" y="0" z="13" spawntime="60" />
 	</npc>
 	<npc centerx="32132" centery="32562" centerz="13" radius="1">
 		<npc name="A Vulcongra" x="0" y="0" z="13" spawntime="60" />
@@ -2902,8 +2977,8 @@
 	<npc centerx="33517" centery="32856" centerz="14" radius="1">
 		<npc name="Urks The Mute" x="0" y="0" z="14" spawntime="60" />
 	</npc>
-	<npc centerx="33527" centery="32865" centerz="14" radius="1">
-		<npc name="Gnomadness" x="0" y="0" z="14" spawntime="60" />
+	<npc centerx="33537" centery="32873" centerz="14" radius="1">
+		<npc name="Gnomadness" x="0" y="-1" z="14" spawntime="60" />
 	</npc>
 	<npc centerx="33062" centery="31153" centerz="15" radius="1">
 		<npc name="Awarness Of The Emperor" x="0" y="0" z="15" spawntime="60" />
@@ -2980,19 +3055,7 @@
 	<npc centerx="33587" centery="32966" centerz="15" radius="1">
 		<npc name="Gnomish Operative (Raiders)" x="0" y="0" z="15" spawntime="60" />
 	</npc>
-	<npc centerx="33356" centery="31982" centerz="7" radius="1">
-		<npc name="Hawkhurst" x="0" y="0" z="15" spawntime="60" />
-	</npc>
-	<npc centerx="33710" centery="32602" centerz="6" radius="1">
-		<npc name="Hawkhurst Ingol" x="0" y="0" z="15" spawntime="60" />
-	</npc>
 	<npc centerx="34070" centery="32009" centerz="14" radius="1">
 		<npc name="Altar" x="0" y="0" z="15" spawntime="60" />
 	</npc>
-  <npc centerx="33181" centery="32883" centerz="7" radius="1">
-		<npc name="Tonar" x="0" y="0" z="7" spawntime="60" />
-	</npc>
-	<npc centerx="33068" centery="32917" centerz="7" radius="1">
-		<npc name="Tonar Oskayaat" x="0" y="0" z="7" spawntime="60" />
-</npc>
 </npcs>

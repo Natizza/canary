@@ -1,2 +1,28 @@
 <?xml version="1.0"?>
-<monsters />
+<monsters>
+	<monster centerx="848" centery="1064" centerz="6" radius="14">
+		<monster name="Deathling Scout" x="-1" y="-12" z="6" spawntime="60" />
+		<monster name="Deepling Guard" x="12" y="-11" z="6" spawntime="60" />
+		<monster name="Deepling Master Librarian" x="-2" y="-9" z="6" spawntime="47180288" />
+		<monster name="Deepling Master Librarian" x="-1" y="-9" z="6" spawntime="60" />
+		<monster name="Deathling Scout" x="-9" y="-7" z="6" spawntime="60" />
+		<monster name="Deepling Elite" x="-13" y="-6" z="6" spawntime="60" />
+		<monster name="Deathling Scout" x="2" y="-5" z="6" spawntime="60" />
+		<monster name="Deepling Elite" x="13" y="-4" z="6" spawntime="60" />
+		<monster name="Deepling Guard" x="-2" y="-1" z="6" spawntime="60" />
+		<monster name="Deepling Master Librarian" x="12" y="0" z="6" spawntime="60" />
+		<monster name="Deepling Master Librarian" x="3" y="1" z="6" spawntime="60" />
+		<monster name="Deepling Master Librarian" x="-10" y="4" z="6" spawntime="60" />
+		<monster name="Deepling Guard" x="11" y="6" z="6" spawntime="60" />
+		<monster name="Deepling Master Librarian" x="-8" y="7" z="6" spawntime="60" />
+		<monster name="Deathling Scout" x="8" y="8" z="6" spawntime="60" />
+		<monster name="Deepling Guard" x="-7" y="9" z="6" spawntime="60" />
+		<monster name="Deepling Elite" x="-10" y="10" z="6" spawntime="60" />
+		<monster name="Deathling Scout" x="-5" y="11" z="6" spawntime="60" />
+		<monster name="Deepling Master Librarian" x="6" y="11" z="6" spawntime="60" />
+		<monster name="Deepling Guard" x="11" y="11" z="6" spawntime="60" />
+		<monster name="Deepling Master Librarian" x="-1" y="12" z="6" spawntime="60" />
+		<monster name="Deepling Elite" x="4" y="13" z="6" spawntime="60" />
+		<monster name="Deepling Elite" x="4" y="14" z="6" spawntime="47180288" />
+	</monster>
+</monsters>
