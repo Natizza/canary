@@ -75699,7 +75699,8 @@ Granted by TibiaGoals.com"/>
 		<attribute key="primarytype" value="valuables" />
 		<attribute key="weight" value="120" />
 	</item>
-		<item id="44813" article="a" name="Ferumbras' exercise dummy">
+	<!-- Inicia Items Customs -->
+	<item id="44813" article="a" name="Ferumbras' exercise dummy">
 		<attribute key="primarytype" value="furniture"/>
 		<attribute key="description" value="You can train your skills by using training weapons with this expert exercise dummy"/>
 		<attribute key="wrapableto" value="23398"/>
@@ -75732,10 +75733,10 @@ Granted by TibiaGoals.com"/>
 		<attribute key="wrapableto" value="23398"/>
 		<attribute key="rotateto" value="44789"/>
 		<attribute key="type" value="dummy">
-		<attribute key="rate" value="120"/>
+			<attribute key="rate" value="120"/>
 		</attribute>
 	</item>
-		<item id="44801" article="a" name="sanguine backpack">
+	<item id="44801" article="a" name="sanguine backpack">
 		<attribute key="primarytype" value="containers"/>
 		<attribute key="containersize" value="32"/>
 		<attribute key="showAttributes" value="1"/>
@@ -75751,7 +75752,7 @@ Granted by TibiaGoals.com"/>
 			<attribute key="increase capacity" value="3"/>
 		</attribute>
 		<attribute key="script" value="moveevent">
-		<attribute key="slot" value="backpack"/>
+			<attribute key="slot" value="backpack"/>
 		</attribute>
 	</item>
 	<item id="44812" article="a" name="christmas backpack">
@@ -75763,51 +75764,51 @@ Granted by TibiaGoals.com"/>
 		<attribute key="increase capacity" value="3"/>
 		</attribute>
 		<attribute key="script" value="moveevent">
-		<attribute key="slot" value="backpack"/>
+			<attribute key="slot" value="backpack"/>
 		</attribute>
 	</item>
-		<item id="44800" article="a" name="alicorn backpack">
+	<item id="44800" article="a" name="alicorn backpack">
 		<attribute key="primarytype" value="containers"/>
 		<attribute key="containersize" value="32"/>
 		<attribute key="showAttributes" value="1"/>
 		<attribute key="holymagiclevelpoints" value="1"/>
 		<attribute key="weight" value="1800"/>
-	<attribute key="description" value="This backpack can only be use by paladin."/>
+		<attribute key="description" value="This backpack can only be use by paladin."/>
 		<attribute key="imbuementslot" value="1">
 			<attribute key="increase capacity" value="3"/>
 		</attribute>
 		<attribute key="script" value="moveevent">
-		<attribute key="slot" value="backpack"/>
+			<attribute key="slot" value="backpack"/>
 		</attribute>
 	</item>
-		<item id="44798" article="a" name="arcanomancer backpack">
+	<item id="44798" article="a" name="arcanomancer backpack">
 		<attribute key="primarytype" value="containers"/>
 		<attribute key="containersize" value="32"/>
 		<attribute key="showAttributes" value="1"/>
 		<attribute key="firemagiclevelpoints" value="1"/>
 		<attribute key="energymagiclevelpoints" value="1"/>
 		<attribute key="weight" value="1800"/>
-	<attribute key="description" value="This backpack can only be use by sorcerer."/>
+		<attribute key="description" value="This backpack can only be use by sorcerer."/>
 		<attribute key="imbuementslot" value="1">
 			<attribute key="increase capacity" value="3"/>
 		</attribute>
 		<attribute key="script" value="moveevent">
-		<attribute key="slot" value="backpack"/>
+			<attribute key="slot" value="backpack"/>
 		</attribute>
 	</item>
-		<item id="44797" article="a" name="arboreal backpack">
+	<item id="44797" article="a" name="arboreal backpack">
 		<attribute key="primarytype" value="containers"/>
 		<attribute key="containersize" value="32"/>
 		<attribute key="showAttributes" value="1"/>
 		<attribute key="healingmagiclevelpoints" value="1"/>
 		<attribute key="magiclevelpoints" value="1"/>
 		<attribute key="weight" value="1800"/>
-	<attribute key="description" value="This backpack can only be use by druids."/>
+		<attribute key="description" value="This backpack can only be use by druids."/>
 		<attribute key="imbuementslot" value="1">
 			<attribute key="increase capacity" value="3"/>
 		</attribute>
 		<attribute key="script" value="moveevent">
-		<attribute key="slot" value="backpack"/>
+			<attribute key="slot" value="backpack"/>
 		</attribute>
 	</item>
 	<item id="44796" article="a" name="Death backpack">
@@ -75820,7 +75821,7 @@ Granted by TibiaGoals.com"/>
 			<attribute key="increase capacity" value="3"/>
 		</attribute>
 		<attribute key="script" value="moveevent">
-		<attribute key="slot" value="backpack"/>
+			<attribute key="slot" value="backpack"/>
 		</attribute>
 	</item>
 		<item id="44795" article="a" name="skeleton backpack">
@@ -75831,10 +75832,10 @@ Granted by TibiaGoals.com"/>
 			<attribute key="increase capacity" value="3"/>
 		</attribute>
 		<attribute key="script" value="moveevent">
-		<attribute key="slot" value="backpack"/>
+			<attribute key="slot" value="backpack"/>
 		</attribute>
 	</item>
-		<item id="44805" article="a" name="Skull backpack">
+	<item id="44805" article="a" name="Skull backpack">
 		<attribute key="primarytype" value="containers"/>
 		<attribute key="containersize" value="32"/>
 		<attribute key="showAttributes" value="1"/>
@@ -75844,7 +75845,7 @@ Granted by TibiaGoals.com"/>
 			<attribute key="increase capacity" value="3"/>
 		</attribute>
 		<attribute key="script" value="moveevent">
-		<attribute key="slot" value="backpack"/>
+			<attribute key="slot" value="backpack"/>
 		</attribute>
 	</item>
 		<item id="44802" article="a" name="Halloween backpack">
@@ -75855,7 +75856,7 @@ Granted by TibiaGoals.com"/>
 			<attribute key="increase capacity" value="3"/>
 		</attribute>
 		<attribute key="script" value="moveevent">
-		<attribute key="slot" value="backpack"/>
+			<attribute key="slot" value="backpack"/>
 		</attribute>
 	</item>
 	<item id="44804" article="a" name="mystic backpack">
@@ -75874,7 +75875,7 @@ Granted by TibiaGoals.com"/>
 			<attribute key="increase capacity" value="3"/>
 		</attribute>
 		<attribute key="script" value="moveevent">
-		<attribute key="slot" value="backpack"/>
+			<attribute key="slot" value="backpack"/>
 		</attribute>
 	</item>
 	<item id="44790" name="Chicken">
@@ -75882,57 +75883,56 @@ Granted by TibiaGoals.com"/>
 		<attribute key="showCount" value="0"/>
 		<attribute key="weight" value="100"/>
 	</item>
-		<item id="44791" name="Pizza">
+	<item id="44791" name="Pizza">
 		<attribute key="primarytype" value="food"/>
 		<attribute key="showCount" value="0"/>
 		<attribute key="weight" value="100"/>
 	</item>
-		<item id="44810" name="Druid's Box">
+	<item id="44810" name="Druid's Box">
 		<attribute key="primarytype" value="valuables"/>
-	<attribute key="description" value="Get random druid item."/>
+		<attribute key="description" value="Get random druid item."/>
 		<attribute key="weight" value="100"/>
 	</item>
-		<item id="44807" name="Paladin's Box">
+	<item id="44807" name="Paladin's Box">
 		<attribute key="primarytype" value="valuables"/>
-	<attribute key="description" value="Get random paladin item."/>
+		<attribute key="description" value="Get random paladin item."/>
 		<attribute key="weight" value="100"/>
 	</item>
-		<item id="44809" name="Sorcerer's Box">
+	<item id="44809" name="Sorcerer's Box">
 		<attribute key="primarytype" value="valuables"/>
-	<attribute key="description" value="Get random sorcerer item."/>
+		<attribute key="description" value="Get random sorcerer item."/>
 		<attribute key="weight" value="100"/>
 	</item>
-		<item id="44808" name="Knight's Box">
+	<item id="44808" name="Knight's Box">
 		<attribute key="primarytype" value="valuables"/>
-	<attribute key="description" value="Get random Knight item."/>
+		<attribute key="description" value="Get random Knight item."/>
 		<attribute key="weight" value="100"/>
-		</item>
-
-		<item id="42965" name="stairs2">
+	</item>
+	<item id="42965" name="stairs2">
 		<attribute key="floorchange" value="north"/>
 	</item>
-		<item id="42971" name="stairs3">
+	<item id="42971" name="stairs3">
 		<attribute key="floorchange" value="south"/>
 	</item>
-		<item id="42393" name="stairs4">
+	<item id="42393" name="stairs4">
 		<attribute key="floorchange" value="west"/>
 	</item>
-		<item id="42391" name="stairs5">
+	<item id="42391" name="stairs5">
 		<attribute key="floorchange" value="north"/>
 	</item>
 		<!--item id="43134" name="stairs6">
 		<attribute key="floorchange" value="south"/>
 	</item-->
-		<item id="43130" name="stairs7">
+	<item id="43130" name="stairs7">
 		<attribute key="floorchange" value="north"/>
 	</item>
-		<item id="42397" name="stairs8">
+	<item id="42397" name="stairs8">
 		<attribute key="floorchange" value="south"/>
 	</item>
-		<item id="42395" name="stairs10	">
+	<item id="42395" name="stairs10	">
 		<attribute key="floorchange" value="east"/>
 	</item>
-		<item id="44787" article="a" name="undead exercise dummy">
+	<item id="44787" article="a" name="undead exercise dummy">
 		<attribute key="primarytype" value="furniture"/>
 		<attribute key="description" value="You can train your skills by using training weapons with this expert exercise dummy,"/>
 		<attribute key="wrapableto" value="23398"/>
@@ -75941,7 +75941,7 @@ Granted by TibiaGoals.com"/>
 			<attribute key="rate" value="120"/>
 		</attribute>
 	</item>
-		<item id="44786" article="a" name="undead exercise dummy">
+	<item id="44786" article="a" name="undead exercise dummy">
 		<attribute key="primarytype" value="furniture"/>
 		<attribute key="description" value="You can train your skills by using training weapons with this expert exercise dummy,"/>
 		<attribute key="wrapableto" value="23398"/>
@@ -75950,7 +75950,7 @@ Granted by TibiaGoals.com"/>
 			<attribute key="rate" value="120"/>
 		</attribute>
 	</item>
-		<item id="44799" article="a" name="spiritthorn backpack">
+	<item id="44799" article="a" name="spiritthorn backpack">
 		<attribute key="primarytype" value="containers"/>
 		<attribute key="containersize" value="32"/>
 		<attribute key="showAttributes" value="1"/>
@@ -75961,8 +75961,9 @@ Granted by TibiaGoals.com"/>
 			<attribute key="increase capacity" value="3"/>
 		</attribute>
 		<attribute key="script" value="moveevent">
-		<attribute key="slot" value="backpack"/>
+			<attribute key="slot" value="backpack"/>
 		</attribute>
 	</item>
+	<!-- Termina Items Customs -->
 </items>
 
