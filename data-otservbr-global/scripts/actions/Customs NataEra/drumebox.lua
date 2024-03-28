@@ -1,12 +1,12 @@
 local rewards = {
 	{ id = 34150, name = "lion longbow" },
-	{ id = 34150, name = "lion rod" },
-	{ id = 34150, name = "lion wand" },
-	{ id = 34150, name = "lion spellbook" },
-	{ id = 34150, name = "lion shield" },
-	{ id = 34150, name = "lion longsowrd" },
-	{ id = 34150, name = "lion spangenhelm" },
-	{ id = 34150, name = "lion plate" },
+	{ id = 34151, name = "lion rod" },
+	{ id = 34152, name = "lion wand" },
+	{ id = 34153, name = "lion spellbook" },
+	{ id = 34154, name = "lion shield" },
+	{ id = 34155, name = "lion longsword" },
+	{ id = 34156, name = "lion spangenhelm" },
+	{ id = 34157, name = "lion plate" },
 
 }
 	
