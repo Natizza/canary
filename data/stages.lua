@@ -68,12 +68,12 @@ skillsStages = {
 	{
 		minlevel = 81,
 		maxlevel = 100,
-		multiplier = 7,--7
+		multiplier = 10,--10
 	},
 	{
 		minlevel = 101,
 		maxlevel = 124,
-		multiplier = 4,--4
+		multiplier = 7,--7
 	},
 	{
 		minlevel = 125,

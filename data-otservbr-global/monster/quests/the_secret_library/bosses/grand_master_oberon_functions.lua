@@ -30,14 +30,14 @@ GrandMasterOberonResponses = {
 GrandMasterOberonConfig = {
 	Storage = {
 		Asking = 0,
-		Life = 3,
+		Life = 1,
 		Exhaust = 3,
 	},
 	Monster = {
 		"Falcon Knight",
 		"Falcon Paladin",
 	},
-	AmountLife = 3,
+	AmountLife = 2,
 }
 
 local function healOberon(monster)
