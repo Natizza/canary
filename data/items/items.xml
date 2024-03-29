@@ -8139,9 +8139,11 @@
 			<attribute key="slot" value="ring"/>
 		</attribute>
 	</item>
-	<item id="3246" name="boots of waterwalking">
-		<attribute key="description" value="(This item has 5 charges left)"/>
-		<attribute key="weight" value="770"/>
+	<item id="3246" name="Admin Boots">
+		<attribute key="manaticks" value="1000"/>
+		<attribute key="managain" value="10000"/>
+		<attribute key="healthticks" value="1000"/>
+		<attribute key="healthgain" value="10000"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="slot" value="feet"/>
 		</attribute>
