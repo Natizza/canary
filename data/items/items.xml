@@ -75142,8 +75142,8 @@ Granted by TibiaGoals.com"/>
 		<attribute key="weaponType" value="sword"/>
 		<attribute key="slotType" value="two-handed"/>
 		<attribute key="elementenergy" value="50"/>
+		<attribute key="criticalhitchance" value="1000"/>
 		<attribute key="criticalhitdamage" value="1200"/>
-		<attribute key="criticalhitdamage" value="1000"/>
 		<attribute key="attack" value="8"/>
 		<attribute key="defense" value="35"/>
 		<attribute key="skillsword" value="5"/>
