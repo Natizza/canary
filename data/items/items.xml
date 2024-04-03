@@ -74880,6 +74880,9 @@ Granted by TibiaGoals.com"/>
 		<attribute key="description" value="It has a turquoise shimmer and was made from a real scarab shell."/>
 		<attribute key="absorbpercentearth" value="2"/>
 		<attribute key="weight" value="120"/>
+		<attribute key="script" value="moveevent">
+			<attribute key="slot" value="ammo"/>
+		</attribute>
 	</item>
 	<item id="43665" article="a" name="dead elder bloodjaw">
 		<attribute key="decayTo" value="0"/>
@@ -75977,4 +75980,3 @@ Granted by TibiaGoals.com"/>
 	</item>
 	<!-- Termina Items Customs -->
 </items>
-
