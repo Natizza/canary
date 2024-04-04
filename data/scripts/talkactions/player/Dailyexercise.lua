@@ -35,8 +35,7 @@ function exercise_reward_modal.onSay(player, words, param)
 					timeLeft = timeLeft - hoursLeft * 60 * 60
 				local minutesLeft = math.floor(timeLeft / 60)
 				local secondsLeft = timeLeft % 60
-				local message = string.format("You must wait %d days, %d hours, %d minutes and %d seconds before claiming your next reward.", daysLeft, hoursLeft, minutesLeft, secondsLeft)
-				player:sendTextMessage(MESSAGE_INFO_DESCR, message)
+				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("You must wait " .. daysLeft .. " days, " .. hoursLeft .. " hours, " .. minutesLeft .. " minutes and ".. secondsLeft .." seconds before claiming your next reward."))
 				return false
 			end
 			
