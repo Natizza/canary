@@ -108,14 +108,8 @@ local function updateRoulette(newItemInfo)
             end
         end
     end
-
-    if ItemType(newItemInfo.itemId):getCharges() then
-        local item = Game.createItem(newItemInfo.itemId, 1, positions[1])
-        item:setAttribute(ITEM_ATTRIBUTE_CHARGES, newItemInfo.count)
-    else
         Game.createItem(newItemInfo.itemId, newItemInfo.count, positions[1])
     end
-end
 
 local function clearRoulette(newItemInfo)
     local positions = config.roulettePositions
@@ -128,15 +122,10 @@ local function clearRoulette(newItemInfo)
         if newItemInfo == nil then
             positions[i]:sendMagicEffect(CONST_ME_POFF)
         else
-            if ItemType(newItemInfo.itemId):getCharges() then
-                local item = Game.createItem(newItemInfo.itemId, 1, positions[i])
-                item:setAttribute(ITEM_ATTRIBUTE_CHARGES, newItemInfo.count)
-            else
                 Game.createItem(newItemInfo.itemId, newItemInfo.count, positions[i])
-            end
         end
     end
-end
+end	
 
 local function chanceNewReward()
     local newItemInfo = {itemId = 0, count = 0}
@@ -191,9 +180,6 @@ local function rewardPlayer(playerId, leverPosition)
     local inbox = player:getInbox()
     if inbox then
         local addedItem = inbox:addItem(item:getId(), 1, INDEX_WHEREEVER, FLAG_NOLIMIT)
-        if addedItem and ItemType(item:getId()):getCharges() then
-            addedItem:setAttribute(ITEM_ATTRIBUTE_CHARGES, item:getCharges())
-        end
     end
 
     player:sendTextMessage(MESSAGE_STATUS, "Congratulations! You have won " .. item:getName() .. ". The item has been sent to your inbox.")
