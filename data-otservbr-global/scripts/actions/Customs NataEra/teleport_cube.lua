@@ -76,6 +76,7 @@ local Cities = {
     { name = "Darashia", position = Position(33213, 32454, 1) },
     { name = "Farmine", position = Position(33023, 31521, 11) },
     { name = "Liberty Bay", position = Position(32317, 32826, 7) },
+	{ name = "Marapur", position = Position(33776, 32754, 5) },
     { name = "Port Hope", position = Position(32594, 32745, 7) },
     { name = "Gray Beach", position = Position(33447, 31323, 9) },
     { name = "Krailos", position = Position(33657, 31665, 8) },
