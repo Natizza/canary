@@ -65945,8 +65945,11 @@ former students at the Noodles Academy. Awarded by TibiaLabs.com"/>
 	<item id="35524" article="a" name="jungle quiver">
 		<attribute key="primarytype" value="quivers"/>
 		<attribute key="slotType" value="right-hand"/>
+		<attribute key="showattributes" value="1"/>
 		<attribute key="containersize" value="8"/>
 		<attribute key="weight" value="1800"/>
+		<attribute key="perfectshotdamage" value="10"/>
+		<attribute key="perfectshotrange" value="5"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="150"/>
 			<attribute key="slot" value="right-hand"/>
@@ -65956,8 +65959,11 @@ former students at the Noodles Academy. Awarded by TibiaLabs.com"/>
 	<item id="35562" article="a" name="quiver">
 		<attribute key="primarytype" value="quivers"/>
 		<attribute key="slotType" value="right-hand"/>
+		<attribute key="showattributes" value="1"/>
 		<attribute key="containersize" value="6"/>
 		<attribute key="weight" value="1700"/>
+		<attribute key="perfectshotdamage" value="5"/>
+		<attribute key="perfectshotrange" value="4"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="slot" value="right-hand"/>
 			<attribute key="vocation" value="None;true, Paladin;true, Royal Paladin"/>
@@ -66132,8 +66138,11 @@ former students at the Noodles Academy. Awarded by TibiaLabs.com"/>
 	<item id="35848" article="a" name="blue quiver">
 		<attribute key="primarytype" value="quivers"/>
 		<attribute key="slotType" value="right-hand"/>
+		<attribute key="showattributes" value="1"/>
 		<attribute key="containersize" value="6"/>
 		<attribute key="weight" value="1700"/>
+		<attribute key="perfectshotdamage" value="5"/>
+		<attribute key="perfectshotrange" value="4"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="slot" value="right-hand"/>
 			<attribute key="vocation" value="None;true, Paladin;true, Royal Paladin"/>
@@ -66142,8 +66151,11 @@ former students at the Noodles Academy. Awarded by TibiaLabs.com"/>
 	<item id="35849" article="a" name="red quiver">
 		<attribute key="primarytype" value="quivers"/>
 		<attribute key="slotType" value="right-hand"/>
+		<attribute key="showattributes" value="1"/>
 		<attribute key="containersize" value="6"/>
 		<attribute key="weight" value="1700"/>
+		<attribute key="perfectshotdamage" value="5"/>
+		<attribute key="perfectshotrange" value="4"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="slot" value="right-hand"/>
 			<attribute key="vocation" value="None;true, Paladin;true, Royal Paladin"/>
@@ -71287,8 +71299,8 @@ Granted by TibiaGoals.com"/>
 		<attribute key="containersize" value="12"/>
 		<attribute key="weight" value="2000"/>
 		<attribute key="magiclevelpoints" value="1"/>
-		<attribute key="perfectshotdamage" value="20"/>
-		<attribute key="perfectshotrange" value="3"/>
+		<attribute key="perfectshotdamage" value="25"/>
+		<attribute key="perfectshotrange" value="5"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="400"/>
 			<attribute key="slot" value="right-hand"/>
@@ -71497,6 +71509,8 @@ Granted by TibiaGoals.com"/>
 		<attribute key="absorbpercentice" value="2"/>
 		<attribute key="containersize" value="8"/>
 		<attribute key="weight" value="1900"/>
+		<attribute key="perfectshotdamage" value="12"/>
+		<attribute key="perfectshotrange" value="5"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="250"/>
 			<attribute key="slot" value="right-hand"/>
