@@ -137,10 +137,10 @@ DailyReward = {
 		[6] = {
 			type = DAILY_REWARD_TYPE_ITEM,
 			systemType = DAILY_REWARD_SYSTEM_TYPE_ONE,
-			items = { 28540, 28541, 28542, 28543, 28544, 28545, 44064 },
+			items = { 35279, 35280, 35281, 35282, 35283, 35284, 44066 },
 			freeAccount = 1,
 			premiumAccount = 2,
-			itemCharges = 50,
+			itemCharges = 5000,
 		},
 		[7] = {
 			type = DAILY_REWARD_TYPE_XP_BOOST,
