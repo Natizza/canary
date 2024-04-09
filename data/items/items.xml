@@ -2065,7 +2065,7 @@
 		<attribute key="elementenergy" value="14"/>
 		<attribute key="maxhitchance" value="91"/>
 		<attribute key="attack" value="14"/>
-		<attribute key="weight" value="70"/>
+		<attribute key="weight" value="35"/>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="action" value="removecount"/>
 			<attribute key="level" value="20"/>
@@ -2082,7 +2082,7 @@
 		<attribute key="elementice" value="14"/>
 		<attribute key="maxhitchance" value="91"/>
 		<attribute key="attack" value="14"/>
-		<attribute key="weight" value="70"/>
+		<attribute key="weight" value="35"/>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="action" value="removecount"/>
 			<attribute key="level" value="20"/>
@@ -2099,7 +2099,7 @@
 		<attribute key="elementfire" value="14"/>
 		<attribute key="maxhitchance" value="91"/>
 		<attribute key="attack" value="14"/>
-		<attribute key="weight" value="70"/>
+		<attribute key="weight" value="35"/>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="action" value="removecount"/>
 			<attribute key="level" value="20"/>
@@ -2172,7 +2172,7 @@
 		<attribute key="elementearth" value="14"/>
 		<attribute key="maxhitchance" value="91"/>
 		<attribute key="attack" value="14"/>
-		<attribute key="weight" value="70"/>
+		<attribute key="weight" value="35"/>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="action" value="removecount"/>
 			<attribute key="level" value="20"/>
@@ -10715,7 +10715,7 @@
 		<attribute key="shootType" value="bolt"/>
 		<attribute key="maxhitchance" value="87"/>
 		<attribute key="attack" value="30"/>
-		<attribute key="weight" value="80"/>
+		<attribute key="weight" value="40"/>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="action" value="removecount"/>
 			<attribute key="weaponType" value="ammo"/>
@@ -10729,7 +10729,7 @@
 		<attribute key="shootType" value="arrow"/>
 		<attribute key="maxhitchance" value="91"/>
 		<attribute key="attack" value="25"/>
-		<attribute key="weight" value="70"/>
+		<attribute key="weight" value="35"/>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="action" value="removecount"/>
 			<attribute key="weaponType" value="ammo"/>
@@ -10743,7 +10743,7 @@
 		<attribute key="shootType" value="poisonarrow"/>
 		<attribute key="maxhitchance" value="91"/>
 		<attribute key="attack" value="23"/>
-		<attribute key="weight" value="80"/>
+		<attribute key="weight" value="40"/>
 	</item>
 	<item id="3449" article="a" name="burst arrow">
 		<attribute key="primarytype" value="ammunition"/>
@@ -10761,7 +10761,7 @@
 		<attribute key="shootType" value="powerbolt"/>
 		<attribute key="maxhitchance" value="91"/>
 		<attribute key="attack" value="40"/>
-		<attribute key="weight" value="90"/>
+		<attribute key="weight" value="45"/>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="action" value="removecount"/>
 			<attribute key="level" value="55"/>
@@ -17956,7 +17956,7 @@
 		<attribute key="shootType" value="infernalbolt"/>
 		<attribute key="maxhitchance" value="91"/>
 		<attribute key="attack" value="72"/>
-		<attribute key="weight" value="90"/>
+		<attribute key="weight" value="45"/>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="action" value="removecount"/>
 			<attribute key="level" value="110"/>
@@ -19167,7 +19167,7 @@
 		<attribute key="shootType" value="piercingbolt"/>
 		<attribute key="maxhitchance" value="87"/>
 		<attribute key="attack" value="33"/>
-		<attribute key="weight" value="80"/>
+		<attribute key="weight" value="40"/>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="action" value="removecount"/>
 			<attribute key="level" value="30"/>
@@ -19183,7 +19183,7 @@
 		<attribute key="shootType" value="sniperarrow"/>
 		<attribute key="maxhitchance" value="100"/>
 		<attribute key="attack" value="28"/>
-		<attribute key="weight" value="70"/>
+		<attribute key="weight" value="35"/>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="action" value="removecount"/>
 			<attribute key="level" value="20"/>
@@ -19199,7 +19199,7 @@
 		<attribute key="shootType" value="onyxarrow"/>
 		<attribute key="maxhitchance" value="94"/>
 		<attribute key="attack" value="38"/>
-		<attribute key="weight" value="70"/>
+		<attribute key="weight" value="35"/>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="action" value="removecount"/>
 			<attribute key="level" value="40"/>
@@ -32628,7 +32628,7 @@
 		<attribute key="shootType" value="tarsalarrow"/>
 		<attribute key="maxhitchance" value="94"/>
 		<attribute key="attack" value="33"/>
-		<attribute key="weight" value="70"/>
+		<attribute key="weight" value="35"/>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="action" value="removecount"/>
 			<attribute key="level" value="30"/>
@@ -32644,7 +32644,7 @@
 		<attribute key="shootType" value="vortexbolt"/>
 		<attribute key="maxhitchance" value="89"/>
 		<attribute key="attack" value="36"/>
-		<attribute key="weight" value="80"/>
+		<attribute key="weight" value="40"/>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="action" value="removecount"/>
 			<attribute key="level" value="40"/>
@@ -33498,7 +33498,7 @@
 		<attribute key="shootType" value="crystallinearrow"/>
 		<attribute key="maxhitchance" value="95"/>
 		<attribute key="attack" value="65"/>
-		<attribute key="weight" value="75"/>
+		<attribute key="weight" value="37"/>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="action" value="removecount"/>
 			<attribute key="level" value="90"/>
@@ -34339,7 +34339,7 @@
 		<attribute key="shootType" value="prismaticbolt"/>
 		<attribute key="maxhitchance" value="90"/>
 		<attribute key="attack" value="66"/>
-		<attribute key="weight" value="85"/>
+		<attribute key="weight" value="43"/>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="action" value="removecount"/>
 			<attribute key="level" value="90"/>
@@ -34355,7 +34355,7 @@
 		<attribute key="shootType" value="drillbolt"/>
 		<attribute key="maxhitchance" value="90"/>
 		<attribute key="attack" value="56"/>
-		<attribute key="weight" value="80"/>
+		<attribute key="weight" value="40"/>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="action" value="removecount"/>
 			<attribute key="level" value="70"/>
@@ -34372,7 +34372,7 @@
 		<attribute key="elementearth" value="27"/>
 		<attribute key="maxhitchance" value="93"/>
 		<attribute key="attack" value="27"/>
-		<attribute key="weight" value="70"/>
+		<attribute key="weight" value="35"/>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="action" value="removecount"/>
 			<attribute key="level" value="70"/>
@@ -43972,7 +43972,7 @@ Awarded by TibiaMagazine.com.ve"/>
 	<item id="22119" article="a" name="burst arrow">
 		<attribute key="primarytype" value="ammunition"/>
 		<attribute key="attack" value="27"/>
-		<attribute key="weight" value="90"/>
+		<attribute key="weight" value="45"/>
 	</item>
 	<item fromid="22120" toid="22121" article="a" name="little adventurer doll">
 		<attribute key="primarytype" value="dolls and bears"/>
@@ -48861,7 +48861,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 		<attribute key="duration" value="3600"/>
 		<attribute key="decayTo" value="0"/>
 		<attribute key="attack" value="37"/>
-		<attribute key="weight" value="80"/>
+		<attribute key="weight" value="40"/>
 	</item>
 	<item id="25758" article="a" name="spectral bolt">
 		<attribute key="primarytype" value="ammunition"/>
@@ -48873,7 +48873,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 		<attribute key="maxhitchance" value="100"/>
 		<attribute key="duration" value="3600"/>
 		<attribute key="attack" value="78"/>
-		<attribute key="weight" value="90"/>
+		<attribute key="weight" value="45"/>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="action" value="removecount"/>
 			<attribute key="level" value="150"/>
