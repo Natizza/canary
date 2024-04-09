@@ -53,6 +53,7 @@ local Bosses = {
 	{ name = "Soulwar Hub", position = Position(33621, 31427, 10) },
 	{ name = "Shadowpelt", position = Position(33403, 32097, 9) },
 	{ name = "Tentugly", position = Position(33791, 31386, 6) },
+	{ name = "The Monster", position = Position(33791, 32573, 12) },
 	{ name = "Thorn Knight", position = Position(32657, 32882, 14) },
 	{ name = "Timira", position = Position(33804, 32702, 7) },
 	{ name = "Time Guardian", position = Position(33010, 31665, 14) },
