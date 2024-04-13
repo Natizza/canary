@@ -40,15 +40,11 @@ function callback.monsterOnDropLoot(monster, corpse)
 		chance = chance / numActivators ^ configManager.getFloat(configKeys.PARTY_SHARE_LOOT_BOOSTS_DIMINISHING_FACTOR)
 	end
 
-	local rolls = chance / 100
-	if math.random(0, 100) < (rolls % 1) * 100 then
-		rolls = math.ceil(rolls)
-	else
-		rolls = math.floor(rolls)
-	end
-
-	if rolls == 0 then
-		return
+	local chanceRoll = math.random(1, 100)
+	local rolls = 1
+	
+	if chanceRoll == 15 then	
+		rolls = math.random(1,3)
 	end
 
 	if configManager.getBoolean(configKeys.PARTY_SHARE_LOOT_BOOSTS) and rolls > 1 then
