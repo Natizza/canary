@@ -18,7 +18,7 @@ monster.bosstiary = {
 	bossRace = RARITY_ARCHFOE,
 }
 
-monster.health = 300000
+monster.health = 250000
 monster.maxHealth = monster.health
 monster.race = "undead"
 monster.corpse = 36843
