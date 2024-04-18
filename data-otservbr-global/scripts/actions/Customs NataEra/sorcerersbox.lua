@@ -1,7 +1,6 @@
 local rewards = {
 
 	{ id = 44798, name = "arcanomancer backpack" },
-	{ id = 22118, name = "Tibia coins" },
 	{ id = 35522, name = "jungle wand" },
 	{ id = 37317, name = "Roulette coin" },
 	{ id = 27457, name = "wand of destruction" },
@@ -13,8 +12,6 @@ local rewards = {
 	{ id = 27649, name = "gnome legs" },
 	{ id = 28717, name = "falcon wand" },
 	{ id = 30399, name = "cobra wand" },
-
-
 }
 	
 druidsboxId = 44809
