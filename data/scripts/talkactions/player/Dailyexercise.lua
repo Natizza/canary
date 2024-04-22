@@ -45,10 +45,10 @@ function exercise_reward_modal.onSay(player, words, param)
 				if item then
 					item:setActionId(IMMOVABLE_ACTION_ID)
 					player:setStorageValue("last_exercise_reward", os.time())
-					player:sendTextMessage(MESSAGE_INFO_DESCR, "Congratulations, you just received a [".. info.name .."].")
+					player:sendTextMessage(MESSAGE_LOOK, "Congratulations, you just received a [".. info.name .."].")
 				end
 			else
-				player:sendTextMessage(MESSAGE_INFO_DESCR, "You need to have capacity and empty slots to receive.")
+				player:sendTextMessage(MESSAGE_LOOK, "You need to have capacity and empty slots to receive.")
 				return true
 			end
 		end)

@@ -385,7 +385,7 @@ GameStore.Categories = {
 			{
 				icons = { "Lasting_Exercise_Axe.png" },
 				name = "Lasting Exercise Axe",
-				price = 300,
+				price = 200,
 				itemtype = 35286,
 				charges = 65000,
 				description = "<i>Use it to train your axe fighting skill on an exercise dummy!</i>\n\n{character}\n{storeinbox}\n{info} use it on an exercise dummy to train your axe fighting skill\n{info} usable 65000 imes a piece",
@@ -395,7 +395,7 @@ GameStore.Categories = {
 			{
 				icons = { "Lasting_Exercise_Bow.png" },
 				name = "Lasting Exercise Bow",
-				price = 300,
+				price = 200,
 				itemtype = 35288,
 				charges = 65000,
 				description = "<i>Use it to train your distance fighting skill on an exercise dummy!</i>\n\n{character}\n{storeinbox}\n{info} use it on an exercise dummy to train your distance fighting skill\n{info} usable 65000 imes a piece",
@@ -405,7 +405,7 @@ GameStore.Categories = {
 			{
 				icons = { "Lasting_Exercise_Club.png" },
 				name = "Lasting Exercise Club",
-				price = 300,
+				price = 200,
 				itemtype = 35287,
 				charges = 65000,
 				description = "<i>Use it to train your club fighting skill on an exercise dummy!</i>\n\n{character}\n{storeinbox}\n{info} use it on an exercise dummy to train your club fighting skill\n{info} usable 65000 imes a piece",
@@ -414,7 +414,7 @@ GameStore.Categories = {
 			{
 				icons = { "Lasting_Exercise_Rod.png" },
 				name = "Lasting Exercise Rod",
-				price = 300,
+				price = 200,
 				itemtype = 35289,
 				charges = 65000,
 				description = "<i>Use it to train your magic level on an exercise dummy!</i>\n\n{character}\n{storeinbox}\n{info} use it on an exercise dummy to train your magic level\n{info} usable 65000 imes a piece",
@@ -424,7 +424,7 @@ GameStore.Categories = {
 			{
 				icons = { "Lasting_Exercise_Sword.png" },
 				name = "Lasting Exercise Sword",
-				price = 300,
+				price = 200,
 				itemtype = 35285,
 				charges = 65000,
 				description = "<i>Use it to train your sword fighting skill on an exercise dummy!</i>\n\n{character}\n{storeinbox}\n{info} use it on an exercise dummy to train your sword fighting skill\n{info} usable 65000 imes a piece",
@@ -434,7 +434,7 @@ GameStore.Categories = {
 			{
 				icons = { "Lasting_Exercise_Wand.png" },
 				name = "Lasting Exercise Wand",
-				price = 300,
+				price = 200,
 				itemtype = 35290,
 				charges = 65000,
 				description = "<i>Use it to train your magic level on an exercise dummy!</i>\n\n{character}\n{storeinbox}\n{info} use it on an exercise dummy to train your magic level\n{info} usable 65000 imes a piece",
@@ -444,7 +444,7 @@ GameStore.Categories = {
 			{
 				icons = { "Lasting_Exercise_Shield.png" },
 				name = "Lasting Exercise Shield",
-				price = 300,
+				price = 200,
 				itemtype = 44067,
 				charges = 65000,
 				description = "<i>Use it to train your shielding skill on an exercise dummy!</i>\n\n{character}\n{storeinbox}\n{info} use it on an exercise dummy to train your shielding skill\n{info} usable 65000 imes a piece",
