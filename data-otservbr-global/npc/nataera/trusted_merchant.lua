@@ -1501,6 +1501,10 @@ npcConfig.shop = {
 	{ itemName = "Expedition Backpack", clientId = 10324, buy = 500 },
 	{ itemName = "demon Backpack", clientId = 9601, buy = 500 },
 	{ itemName = "Camouflage Backpack", clientId = 2872, buy = 500 },
+	{ itemName = " blessed steak", clientId = 9086, buy = 3500000 },
+	{ itemName = "strawberry cupcake", clientId = 28485, buy = 3500000 },
+	{ itemName = "rotworm stew", clientId = 9079, buy = 3500000 },
+	{ itemName = "blueberry cupcake", clientId = 28484, buy = 3500000 },
 }
 
 -- On buy npc shop message
