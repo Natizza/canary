@@ -17,8 +17,8 @@ monster.events = {
 	"DreamCourtsBossDeath",
 }
 
-monster.health = 320000
-monster.maxHealth = 320000
+monster.health = 250000
+monster.maxHealth = 250000
 monster.race = "blood"
 monster.corpse = 30159
 monster.speed = 125

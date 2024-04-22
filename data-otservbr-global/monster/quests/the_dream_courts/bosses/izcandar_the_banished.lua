@@ -23,8 +23,8 @@ monster.bosstiary = {
 	storage = Storage.Quest.U12_00.TheDreamCourts.ArenaTimer,
 }
 
-monster.health = 220000
-monster.maxHealth = 220000
+monster.health = 180000
+monster.maxHealth = 180000
 monster.race = "blood"
 monster.corpse = 6068
 monster.speed = 125
