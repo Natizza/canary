@@ -1505,6 +1505,7 @@ npcConfig.shop = {
 	{ itemName = "strawberry cupcake", clientId = 28485, buy = 3500000 },
 	{ itemName = "rotworm stew", clientId = 9079, buy = 3500000 },
 	{ itemName = "blueberry cupcake", clientId = 28484, buy = 3500000 },
+	{ itemName = "void boots", clientId = 23476, buy = 50000 },
 }
 
 -- On buy npc shop message
