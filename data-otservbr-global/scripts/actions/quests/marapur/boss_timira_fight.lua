@@ -110,7 +110,7 @@ local secondStageConfig = {
 local activeTeleportId = 35500
 local inactiveTeleportId = 39238
 local chestId = 39390
-local activeStage = stages.FIRST
+local activeStage = stages.THIRD
 local firstStagePoints = 0
 local secondStagePoints = 0
 
@@ -184,12 +184,6 @@ encounter
 		end,
 	})
 	:autoAdvance()
-encounter:addRemoveMonsters():autoAdvance()
-encounter:addStage({ start = function() end }) -- FIRST stage, Action timiraBucket.onUse activates next stage
-
-encounter:addRemoveMonsters():autoAdvance()
-encounter:addStage({ start = function() end }) -- SECOND stage, Action corruptedWater.onUse activates next stage
-
 encounter:addRemoveMonsters():autoAdvance()
 encounter:addSpawnMonsters({ -- THIRD stage, boss fight
 	{

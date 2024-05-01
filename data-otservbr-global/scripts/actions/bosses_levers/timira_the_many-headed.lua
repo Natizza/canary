@@ -3,11 +3,11 @@ local config = {
 	encounter = "Timira the Many-Headed",
 	requiredLevel = 250,
 	playerPositions = {
-		{ pos = Position(33809, 32702, 8), teleport = Position(33787, 32680, 10), effect = CONST_ME_TELEPORT },
-		{ pos = Position(33808, 32702, 8), teleport = Position(33787, 32680, 10), effect = CONST_ME_TELEPORT },
-		{ pos = Position(33807, 32702, 8), teleport = Position(33787, 32680, 10), effect = CONST_ME_TELEPORT },
-		{ pos = Position(33806, 32702, 8), teleport = Position(33787, 32680, 10), effect = CONST_ME_TELEPORT },
-		{ pos = Position(33805, 32702, 8), teleport = Position(33787, 32680, 10), effect = CONST_ME_TELEPORT },
+		{ pos = Position(33809, 32702, 8), teleport = Position(33815, 32701, 9), effect = CONST_ME_TELEPORT },
+		{ pos = Position(33808, 32702, 8), teleport = Position(33815, 32701, 9), effect = CONST_ME_TELEPORT },
+		{ pos = Position(33807, 32702, 8), teleport = Position(33815, 32701, 9), effect = CONST_ME_TELEPORT },
+		{ pos = Position(33806, 32702, 8), teleport = Position(33815, 32701, 9), effect = CONST_ME_TELEPORT },
+		{ pos = Position(33805, 32702, 8), teleport = Position(33815, 32701, 9), effect = CONST_ME_TELEPORT },
 	},
 	specPos = {
 		from = Position(33803, 32690, 9),
