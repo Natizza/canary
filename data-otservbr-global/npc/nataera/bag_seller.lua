@@ -67,7 +67,7 @@ npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBac
 end
 -- On sell npc shop message
 npcType.onSellItem = function(npc, player, itemId, subtype, amount, ignore, name, totalCost)
-	player:sendTextMessage(MESSAGE_LOOK, string.format("Sold %ix %s for %i gold.", amount, name, totalCost))
+	player:sendTextMessage(MESSAGE_INFO_DESCR, string.format("Sold %ix %s for %i gold.", amount, name, totalCost))
 end
 -- On check npc shop message (look item)
 npcType.onCheckItem = function(npc, player, clientId, subType) end
@@ -110,6 +110,16 @@ end
 local charge = {}
 
 local chargeItem = {
+	["pendulet"] = { noChargeID = 29429, ChargeID = 30344 },
+	["sleep shawl"] = { noChargeID = 29428, ChargeID = 30342 },
+	["blister ring"] = { noChargeID = 31621, ChargeID = 31557 },
+	["theurgic amulet"] = { noChargeID = 30401, ChargeID = 30403 },
+	["ring of souls"] = { noChargeID = 32636, ChargeID = 32621 },
+	["spiritthorn ring"] = { noChargeID = 39179, ChargeID = 39177 },
+	["alicorn ring"] = { noChargeID = 39182, ChargeID = 39180 },
+	["arcanomancer sigil"] = { noChargeID = 39185, ChargeID = 39183 },
+	["arboreal ring"] = { noChargeID = 39188, ChargeID = 39187 },
+	["turtle amulet"] = { noChargeID = 39235, ChargeID = 39233 },
 }
 
 local function creatureSayCallback(npc, creature, type, message)
